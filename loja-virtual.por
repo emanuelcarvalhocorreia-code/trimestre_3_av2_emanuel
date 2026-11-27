@@ -26,12 +26,48 @@
 
 
    funcao adicionar_produto(){
-           escreva("--- CATÁLOGO DE PRODUTOS ---\n")
+
+          escreva("--- CATÁLOGO DE PRODUTOS ---\n")
 					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
 					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
 					escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n")
 					escreva("Escolha o produto que deseja adicionar: ")
              }
+             
+  funcao ver_carrinho(){
+          limpa()
+					escreva("--- MEU CARRINHO DE COMPRAS ---\n")
+					se (qtd_carrinho_prod1 == 0 e qtd_carrinho_prod2 == 0 e qtd_carrinho_prod3 == 0)
+					{
+						escreva("Seu carrinho está vazio.\n")
+					}
+					senao
+					{
+						se (qtd_carrinho_prod1 > 0) {
+							escreva("- ", qtd_carrinho_prod1, "x Camisa Esportiva (R$ ", (qtd_carrinho_prod1 * preco_prod1), ")\n")
+						}
+						se (qtd_carrinho_prod2 > 0) {
+							escreva("- ", qtd_carrinho_prod2, "x Boné Casual (R$ ", (qtd_carrinho_prod2 * preco_prod2), ")\n")
+						}
+						se (qtd_carrinho_prod3 > 0) {
+							escreva("- ", qtd_carrinho_prod3, "x Tênis de Corrida (R$ ", (qtd_carrinho_prod3 * preco_prod3), ")\n")
+						}
+					}
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
