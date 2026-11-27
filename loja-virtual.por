@@ -26,7 +26,6 @@
 
 
    funcao adicionar_produto(){
-
           escreva("--- CATÁLOGO DE PRODUTOS ---\n")
 					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
 					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
@@ -34,6 +33,7 @@
 					escreva("Escolha o produto que deseja adicionar: ")
              }
              
+
   funcao ver_carrinho(){
           limpa()
 					escreva("--- MEU CARRINHO DE COMPRAS ---\n")
@@ -56,24 +56,19 @@
 				}
 
 
+     funcao alterar_quantidade(){
+	        limpa()
+					escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---\n")
+					escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
+					escreva("2. Boné Casual      (No carrinho: ", qtd_carrinho_prod2, ")\n")
+					escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
+					escreva("Escolha o item para alterar a quantidade: ")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+             }
 
   funcao inicio()
   {
-    
+  
 		// 1. LAÇO PRINCIPAL DO SISTEMA
 		enquanto (opcao_menu_principal != 0)
 		{
@@ -233,7 +228,12 @@
 						escreva("\nOpção inválida!\n")
 					}
 					
-					escreva("\nPressione ENTER para voltar ao menu...")
+					escreva("\nPressione ENTER para voltar ao menu...")limpa()
+					escreva("--- REMOVER ITEM DO CARRINHO ---\n")
+					escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
+					escreva("2. Boné Casual      (No carrinho: ", qtd_carrinho_prod2, ")\n")
+					escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
+					escreva("Escolha o item que deseja remover totalmente: ")
 					leia(tecla_pausa)
 					pare
 
