@@ -25,6 +25,16 @@
 
 
 
+   funcao adicionar_produto(){
+           escreva("--- CATÁLOGO DE PRODUTOS ---\n")
+					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
+					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
+					escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n")
+					escreva("Escolha o produto que deseja adicionar: ")
+             }
+
+
+
   funcao inicio()
   {
     
@@ -45,8 +55,7 @@
 			escreva("Escolha uma opção: ")
 			leia(opcao_menu_principal)
 
-			escolha (opcao_menu_principal)
-			{
+			escolha (opcao_menu_principal){
 				// ====================================================
 				// C - CREATE (Adicionar Itens ao Carrinho)
 				// ====================================================
